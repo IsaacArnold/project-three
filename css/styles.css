@@ -45,6 +45,26 @@ div > p {
     text-align: center;
 }
 
+label {
+    margin-bottom: 10px;
+    font-size: .95em;
+    color: navy;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="checkbox"],
+input[type="radio"],
+textarea,
+select {
+    background: lightblue;
+    border: none;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: .95em;
+}
+
 /* ==== Class Selectors ==== */
 
 .title,
@@ -65,6 +85,15 @@ div > p {
 }
 
 .second-border {
-    border-top: 1px solid navy;
+    border-top: 2px solid navy;
     margin-top: 5px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-btn {
+    flex-direction: row;
 }
