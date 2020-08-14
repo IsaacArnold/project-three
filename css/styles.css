@@ -65,6 +65,16 @@ select {
     font-size: .95em;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 0 10px 0 0;
+}
+
+textarea {
+    width: 100%;
+    margin: 15px 0;
+}
+
 /* ==== Class Selectors ==== */
 
 .title,
@@ -77,8 +87,6 @@ select {
     background-color: navy;
     color: white;
 }
-
-
 
 .description {
     border-bottom: 5px solid navy;
@@ -96,4 +104,5 @@ select {
 
 .flex-btn {
     flex-direction: row;
+    margin: 15px 0;
 }
