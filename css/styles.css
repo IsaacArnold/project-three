@@ -16,9 +16,34 @@ h1 {
 h2,
 legend {
     color: navy;
+    font-size: 1.25em;
 }
 
+legend {
+    margin-bottom: 20px;
+}
 
+fieldset {
+    border: none;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 0;
+}
+
+header {
+    width: 90%;
+    margin: auto;
+}
+
+div > h2 {
+    margin-bottom: 10px;
+}
+
+div > p {
+    margin-top: 0;
+    text-align: center;
+}
 
 /* ==== Class Selectors ==== */
 
@@ -33,6 +58,13 @@ legend {
     color: white;
 }
 
+
+
 .description {
-    
+    border-bottom: 5px solid navy;
+}
+
+.second-border {
+    border-top: 1px solid navy;
+    margin-top: 5px;
 }

@@ -2,57 +2,72 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>The Code Review</title>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
         <div class="title">
             <h1>The Code Review</h1>
         </div>
+    <header>
         <div class="description">
             <h2>Signup for our newsletter</h2>
             <p>Get the latest news on how your code is doing right in your inbox</p>
         </div>
+        <div class="second-border"></div>
     </header>
 
     <form action="index.html" method="post">
 
-        <fieldset>
+        <fieldset class="contact">
 
             <legend>Contact Information</legend>
             
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="user_name" placeholder="Required" required>
+            <div class="flex">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="user_name" placeholder="Required" required><br>
+            </div>
 
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="user_email" placeholder="Required" required>
+            <div class="flex">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="user_email" placeholder="Required" required><br>
+            </div>
 
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="user_phone_number">
+            <div class="flex">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="user_phone_number"><br>
+            </div>
 
-            <label for="address">Street Address</label>
-            <input type="text" id="address" name="user_address">
+            <div class="flex">
+                <label for="address">Street Address</label>
+                <input type="text" id="address" name="user_address"><br>
+            </div>
 
-            <label for="city">City</label>
-            <input type="text" id="city" name="user_city">
+            <div class="flex">
+                <label for="city">City</label>
+                <input type="text" id="city" name="user_city"><br>
+            </div>
 
-            <label for="state">State</label>
-            <select id="state" name="user_state">
-                <option value="queensland">Queensland</option>
-                <option value="new_south_wales">New South Wales</option>
-                <option value="act">ACT</option>
-                <option value="victoria">Victoria</option>
-                <option value="south_australia">South Australia</option>
-                <option value="western_australia">Western Australia</option>
-                <option value="northern_territory">Northern Territory</option>
-                <option value="tasmania">Tasmania</option>
-            </select>
+            <div class="flex">
+                <label for="state">State</label>
+                <select id="state" name="user_state">
+                    <option value="queensland">Queensland</option>
+                    <option value="new_south_wales">New South Wales</option>
+                    <option value="act">ACT</option>
+                    <option value="victoria">Victoria</option>
+                    <option value="south_australia">South Australia</option>
+                    <option value="western_australia">Western Australia</option>
+                    <option value="northern_territory">Northern Territory</option>
+                    <option value="tasmania">Tasmania</option>
+                </select><br>
+            </div>
 
-            <label for="zip">Zip Code</label>
-            <input type="text" id="zip" name="user_zip_code">
+            <div class="flex">
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" name="user_zip_code">
+            </div>
 
         </fieldset>
 
@@ -62,14 +77,24 @@
 
             <label>Select the newsletters you would like to receive</label>
 
-            <input type="checkbox" id="html" value="news_html" name="user_newsletter"><label for="html">HTML News</label><br>
-            <input type="checkbox" id="css" value="news_css" name="user_newsletter"><label for="css">CSS News</label><br>
-            <input type="checkbox" id="javascript" value="news_javascript" name="user_newsletter"><label for="javascript">Javascript News</label>
+            <div class="flex">
+                <input type="checkbox" id="html" value="news_html" name="user_newsletter"><label for="html">HTML News</label><br>
+            </div>
+            <div class="flex">
+                <input type="checkbox" id="css" value="news_css" name="user_newsletter"><label for="css">CSS News</label><br>
+            </div>
+            <div class="flex">
+                <input type="checkbox" id="javascript" value="news_javascript" name="user_newsletter"><label for="javascript">Javascript News</label>
+            </div>
 
             <label>Newsletter format</label>
 
-            <input type="radio" id="html_format" value="html_format" name="newsletter_format"><label for="html_format">HTML</label><br>
-            <input type="radio" id="plain_format" value="plain_format" name="newsletter_format"><label for="plain_format">Plain text</label>
+            <div class="flex">
+                <input type="radio" id="html_format" value="html_format" name="newsletter_format"><label for="html_format">HTML</label><br>
+            </div>
+            <div class="flex">
+                <input type="radio" id="plain_format" value="plain_format" name="newsletter_format"><label for="plain_format">Plain text</label>
+            </div>
 
             <label for="topics">Other topics you'd like to hear about</label>
             <textarea id="topics" name="user_interest_topics"></textarea>
