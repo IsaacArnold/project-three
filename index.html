@@ -14,7 +14,7 @@
     <header>
         <div class="description">
             <h2>Signup for our newsletter</h2>
-            <p>Get the latest news on how your code is doing right in your inbox</p>
+            <p class="light">Get the latest news on how your code is doing right in your inbox</p>
         </div>
         <div class="second-border"></div>
     </header>
@@ -26,33 +26,34 @@
             <legend>Contact Information</legend>
             
             <div class="flex">
-                <label for="name">Full Name</label>
+                <label for="name" class="light">Full Name</label>
                 <input type="text" id="name" name="user_name" placeholder="Required" required><br>
             </div>
 
             <div class="flex">
-                <label for="email">Email Address</label>
+                <label for="email" class="light">Email Address</label>
                 <input type="email" id="email" name="user_email" placeholder="Required" required><br>
             </div>
 
             <div class="flex">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="user_phone_number"><br>
+                <label for="phone" class="light">Phone Number</label>
+                <input type="tel" id="phone" name="user_phone_number" placeholder="Required" required><br>
             </div>
 
             <div class="flex">
-                <label for="address">Street Address</label>
-                <input type="text" id="address" name="user_address"><br>
+                <label for="address" class="light">Street Address</label>
+                <input type="text" id="address" name="user_address" placeholder="Required" required><br>
             </div>
 
             <div class="flex">
-                <label for="city">City</label>
+                <label for="city" class="light">City</label>
                 <input type="text" id="city" name="user_city"><br>
             </div>
 
             <div class="flex">
-                <label for="state">State</label>
+                <label for="state" class="light">State</label>
                 <select id="state" name="user_state">
+                    <option value="">Choose State</option>
                     <option value="queensland">Queensland</option>
                     <option value="new_south_wales">New South Wales</option>
                     <option value="act">ACT</option>
@@ -65,7 +66,7 @@
             </div>
 
             <div class="flex">
-                <label for="zip">Zip Code</label>
+                <label for="zip" class="light">Zip Code</label>
                 <input type="text" id="zip" name="user_zip_code">
             </div>
 
@@ -78,40 +79,38 @@
             <legend>Newsletter</legend>
 
             <div class="news-section">
-                <label>Select the newsletters you would like to receive</label>
+                <label class="light">Select the newsletters you would like to receive</label>
 
                 <div class="flex-btn">
-                    <input type="checkbox" id="html" value="news_html" name="user_newsletter"><label for="html">HTML News</label><br>
+                    <input type="checkbox" id="html" value="news_html" name="user_newsletter"><label for="html" class="light">HTML News</label><br>
                 </div>
                 <div class="flex-btn">
-                    <input type="checkbox" id="css" value="news_css" name="user_newsletter"><label for="css">CSS News</label><br>
+                    <input type="checkbox" id="css" value="news_css" name="user_newsletter"><label for="css" class="light">CSS News</label><br>
                 </div>
                 <div class="flex-btn">
-                    <input type="checkbox" id="javascript" value="news_javascript" name="user_newsletter"><label for="javascript">Javascript News</label>
+                    <input type="checkbox" id="javascript" value="news_javascript" name="user_newsletter"><label for="javascript" class="light">Javascript News</label>
                 </div>
             </div> <!----- /.news-section ---->
 
             <div class="news-section">
-                <label>Newsletter format</label>
+                <label class="light">Newsletter format</label>
 
                 <div class="flex-btn">
-                    <input type="radio" id="html_format" value="html_format" name="newsletter_format"><label for="html_format">HTML</label><br>
+                    <input type="radio" id="html_format" value="html_format" name="newsletter_format"><label for="html_format" class="light">HTML</label><br>
                 </div>
                 <div class="flex-btn">
-                    <input type="radio" id="plain_format" value="plain_format" name="newsletter_format"><label for="plain_format">Plain text</label>
+                    <input type="radio" id="plain_format" value="plain_format" name="newsletter_format"><label for="plain_format" class="light">Plain text</label>
                 </div>
             </div> <!----- /.news-section ----> 
 
             <div class="news-setion">
-                <label for="topics">Other topics you'd like to hear about</label>
+                <label for="topics" class="light">Other topics you'd like to hear about</label>
                 <textarea id="topics" name="user_interest_topics"></textarea>
             </div> <!----- /.news-section ----> 
 
         </fieldset>
 
-        <div class="button">
             <button type="submit">Sign Up</button>
-        </div>
 
     </form>
 

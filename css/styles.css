@@ -42,6 +42,7 @@ div > h2 {
 
 div > p {
     margin-top: 0;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -64,6 +65,20 @@ select {
     border-radius: 4px;
     padding: 15px;
     font-size: .95em;
+    font-weight: lighter;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline-color: navy;
+}
+
+input[id="name"]::placeholder,
+input[id="email"]::placeholder,
+input[id="phone"]::placeholder,
+input[id="address"]::placeholder {
+    text-align: right;
 }
 
 input[type="checkbox"],
@@ -83,9 +98,16 @@ button[type="submit"] {
     color: white;
     border: none;
     border-radius: 4px;
-    padding: 15px 30px;
+    padding: 15px 0;
     width: 90%;
     margin: auto;
+}
+
+footer {
+    text-align: center;
+    font-size: .8em;
+    font-style: italic;
+    margin: 25px 0;
 }
 
 /* ==== Class Selectors ==== */
@@ -99,6 +121,7 @@ button[type="submit"] {
 .title {
     background-color: navy;
     color: white;
+    height: 81px;
 }
 
 .description {
@@ -126,4 +149,10 @@ button[type="submit"] {
 
 .news-section {
     margin-bottom: 10px;
+}
+
+textarea,
+select,
+.light {
+    font-weight: lighter;
 }
