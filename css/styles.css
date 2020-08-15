@@ -23,17 +23,16 @@ legend {
     margin-bottom: 20px;
 }
 
-fieldset {
-    border: none;
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-    padding: 0;
-}
-
+fieldset,
 header {
     width: 90%;
     margin: auto;
+}
+
+fieldset {
+    border: none;
+    margin-top: 20px;
+    padding: 0;
 }
 
 div > h2 {
@@ -180,7 +179,7 @@ select,
     }
 
     .description {
-        margin-top: 40px;
+        margin-top: 30px;
     }
 
     .second-border {
@@ -208,7 +207,8 @@ select,
     label[for="city"],
     label[for="state"],
     label[for="zip"] {
-        margin-bottom: 0;
+        flex-basis: 30%;
+        margin: auto 0;
     }
 
     input[type="text"],
@@ -216,12 +216,11 @@ select,
     input[type="tel"],
     select[id="state"] {
         flex-basis: 70%;
-        margin-left: auto;
         
     }
 
     input[id="zip"] {
-        flex-basis: 30%;
+        max-width: 30%;
     }
 
     button[type="submit"] {
